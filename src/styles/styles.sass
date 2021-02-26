@@ -1,3 +1,77 @@
+// Imports
+// reset sass
+@use 'reset'
+
+// Variables
 body
-  background: 
-    color: #1b1b1b
+  background-color: white
+  display: flex
+
+
+#app
+  display: flex
+  flex-direction: column
+  height: 100vh
+  width: 100vw
+  justify-content: center
+  align-items: center
+
+#srch
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 2%
+
+
+  #srchbar
+    font-size: 3vw
+    height: 4vw
+    padding-left: 3%
+    margin-right: 0px
+    border: 
+      left: 1px solid black
+      bottom: 1px solid black
+      top: 1px solid black
+      right: none
+      top-left-radius: 50px
+      bottom-left-radius: 50px
+
+    &:focus
+      outline: none
+
+  #srchBtn
+    font-size: 3vw
+    color: black
+    height:4vw
+    background: white
+    display: flex
+    align-items: center
+    width: 4vw
+    border:
+      right: 1px solid black
+      bottom: 1px solid black
+      top: 1px solid black
+      left: none
+      top-right-radius: 50px
+      bottom-right-radius: 50px
+    
+    &:hover
+      color: lightgreen
+
+#imgContainer
+  height: 70vh
+  display: flex
+  align-items: center
+  justify-content: center 
+
+  h1
+    color: white
+    font-size: 5vw
+
+    &.error
+      color: red
+
+  img
+    height: 100%
+
+
